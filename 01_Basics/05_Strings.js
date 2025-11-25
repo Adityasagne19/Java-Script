@@ -30,11 +30,10 @@ console.log(anotherString.trim());           //This wiill trim all the spaces
 const url = "https://hitesh.com/hitesh%20chaudhary"
 console.log(url.replace('%20','_'));         //This is used to replace any substring with any other one .
 
-console.log(url.includes('adi'))              //This shows if the substring 
+console.log(url.includes('adi'))              //This shows if the substring is present or not in the string.
 
 const StringSplit = "cat-dog-horse"           //This going to Split the String on the Basis of '-'. 
 console.log(StringSplit.split('-'));
-
 
 
 
