@@ -3,7 +3,7 @@ const repoCount = 5
 
 //console.log(name + repoCount +"Value") //Outdated method
 
-console.log(`Hello my Name is ${name} and my repo count in ${repoCount}`);  //New and Modern Way called String intercolation 
+console.log(`Hello my Name is ${name} and my repo count in ${repoCount}`);  //New and Modern Way called String interpolation .
 
 const gameName  = new String('Football') // Another way of declaring a String 
 
