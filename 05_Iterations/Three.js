@@ -34,6 +34,6 @@ for (const [key,value] of myMap)  {
     console.log(key, ':-' , value);
 }
 
-
+// for of  does not work with Objects directly. 
 
 
