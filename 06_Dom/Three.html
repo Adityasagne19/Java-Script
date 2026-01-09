@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+</body>  
+<script>
+const div = document.createElement  ('div')   // Create a new div element
+console.log(div);                             // Log the created div element to the console
+div.className = "main"                        // Assign the class name 'main' to the div
+div.id =  Math.round(Math.random() * 10 + 1 );         // Assign a random id between 1 and 10 to the div
+div.setAttribute('title' , 'this is a div')            // Set the title attribute of the div
+div.style.backgroundColor = 'green';                   // Set the background color of the div to green
+div.style.padding = '20px';                            // Set the padding of the div to 20px
+div.innerText = "Chai aur code"                        // Set the inner text of the div
+const adddText = document.createTextNode("Chai aur code")   // Create a text node with the content "Chai aur code"
+div.appendChild(adddText);                                  // Append the text node to the div
+document.body.appendChild(div);                             // Append the div to the body of the document
+</script>                                                   
+</html>
