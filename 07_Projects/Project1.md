@@ -168,3 +168,63 @@ function newGame() {
 }
 
 ```
+
+## Project5
+
+```javascript
+console.log('Project 5');
+
+const insert = document.querySelector('#insert');
+
+window.addEventListener('keydown', function (e) {
+  insert.innerHTML = `
+  <div class='color'>
+  <table>
+  <tr>
+    <th>key</th>
+    <th>keyCode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>`;
+});
+
+
+```
+
+## Project6
+
+```javascript
+// genwrate a random colour
+
+const randomColor = function () {
+  const hex = '123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+const startChangingColor = function () {
+  if (intervalId == null) {
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
